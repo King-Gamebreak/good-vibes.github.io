@@ -1,0 +1,237 @@
+body {
+    background: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: black;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0em 0em 2em;
+}
+
+
+.navbar{
+background-color: black;
+height: 60px;
+}
+
+.navlist{
+float: right;
+}
+
+.navlist li{
+display: inline-block;
+}
+
+.navlist li a{
+color: white;
+margin: 0 10px;
+text-decoration: none;
+}
+
+.navlist li a:hover{
+color: lightgray;
+text-decoration: underline;
+}
+
+.navlist div{
+    color: white;
+    position: absolute;
+    left: 27%;
+    top: -1%;
+}
+
+.Überschrift{
+    position: relative;
+    left: 3.5%;
+    color: black;
+}
+
+.Info{
+    color: lightskyblue;
+    position: absolute;
+    top: 19%;
+}
+
+.Bild1{
+    position: absolute;
+    width: 950px;
+    height: 580px;
+    left: auto;
+}
+
+.Logo{
+    position: absolute;
+    top: 1%;
+    left: 22%;
+}
+
+.Info2{
+    position: relative;
+    left: 3.5%;
+    color: black;
+}
+
+.Aboutus{
+    color: gray;
+    position: relative;
+    top: 110%;
+    left: 3.5%;
+    font-size: smaller;
+}
+
+.Aboutus2{
+    position: relative;
+    left: 3.5%;
+    color: black;
+}
+
+body{
+    box-shadow: 6px -19px 110000px lightgray;
+}
+
+.Owner{
+    color: black;
+}
+
+.DiscordLogo{
+    position: absolute;
+    left: 22%;
+    top: 120%;
+}
+
+.JoinDiscord{
+    display: inline-flex;
+    background: rgb(52, 115, 218);
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 7.5%;
+    width: 10%;
+    position: absolute;
+    left: 27%;
+    top: 120%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.DiscordText{
+position: absolute;
+top: 30%;
+color: white;
+left: 6%;
+font-size: 125%;
+}
+
+
+
+
+.sliderElements,
+.sliderElements figure,
+.sliderControls {
+    margin: 0;
+}
+ 
+.sliderElements:after {
+    content: ".";
+    display: block;
+    height: .1px;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    overflow: hidden;
+}
+ 
+.cssSlider {
+    overflow-x: hidden;
+}
+ 
+.sliderElements {
+    list-style: none;
+    position: relative;
+    left: 0;
+    width: 400%;
+    margin-bottom: .8em;
+    padding: 0;
+    -webkit-transition: left .8s ease-in-out;
+    -moz-transition: left .8s ease-in-out;
+    -o-transition: left .8s ease-in-out;
+    transition: left .8s ease-in-out;
+}
+ 
+.sliderElements > li {
+    float: left;
+    width: 25%;
+    position: relative;
+}
+ 
+#slide02:checked ~ .sliderElements {
+    left: -100%;
+}
+ 
+#slide03:checked ~ .sliderElements {
+    left: -200%;
+}
+ 
+#slide04:checked ~ .sliderElements {
+    left: -300%;
+}
+ 
+/* Bildunterschrift auf dem Bild positionieren */
+.sliderElements figcaption {
+    display: block;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+    padding: .4em;
+    background: rgba(0,0,0,.5);
+}
+ 
+/* Bilder responsive */
+.sliderElements img {
+    width: 100%;
+    height: auto;
+}
+ 
+ 
+/* inputs aus dem Blickfeld schieben */
+.cssSlider input {
+    position: absolute;
+    left: -99999px;
+}
+ 
+/* mittige Ausrichtung der Controls - funktioniert im Zusammenspiel mit inline-block */
+.sliderControls {
+    text-align: center;
+}
+ 
+/* Controls nebeneinander bringen */
+.sliderControls li {
+    display: inline-block;
+}
+ 
+/* Controls auf einheitliche Maße bringen und die Ecken abrunden */
+.sliderControls label {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    background: #68B022;
+    color: #68B022;
+}
+ 
+/* Attributselektor und indirekter Nachfahrkombinator zum ansteuern der labels */
+.sliderControls label:hover,
+#slide01:checked ~ .sliderControls label[for="slide01"],
+#slide02:checked ~ .sliderControls label[for="slide02"],
+#slide03:checked ~ .sliderControls label[for="slide03"],
+#slide04:checked ~ .sliderControls label[for="slide04"] {
+    background: #ddd;
+    color: #ddd;
+}
